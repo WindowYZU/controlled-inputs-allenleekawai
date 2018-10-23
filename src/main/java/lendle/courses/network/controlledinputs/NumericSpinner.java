@@ -7,6 +7,7 @@ package lendle.courses.network.controlledinputs;
 
 import java.awt.BorderLayout;
 import java.awt.FlowLayout;
+import java.util.Calendar;
 import javax.swing.JFrame;
 import javax.swing.JScrollPane;
 import javax.swing.JSpinner;
@@ -36,6 +37,7 @@ public class NumericSpinner {
         model.setValue(50);
         model.setStepSize(10);
         spinner.setModel(model);
+        ((JSpinner.DefaultEditor)spinner.getEditor()).getTextField().setEditable(false);
         ///////////////////////////////////////////////////
         frame.add(spinner);
         
